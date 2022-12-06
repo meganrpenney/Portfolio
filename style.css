@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: color: antiquewhite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 300;
+  color: rgb(219, 108, 34);
+}
+
+p {
+  margin: 0;
+  color: rgb(68, 68, 68);
+  font-weight: 400;
+  font-size: 22px;
+}
+
+ul {
+  margin: 0;
+  color: orange;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+li {
+  display: inline;
+  margin: 0;
+  align-content: right;
+  justify-content: space-evenly;
+
+}
+
+a {
+
+}
+
+/* Utilities */
+
+.nobullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Sitewide */
+
+header {
+  display: flex;
+  width: 100%;
+
+}
+
+#navbar {
+  display: flex;
+  width: 50%;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 0px 5%;
+  padding-bottom: 20px;
+}
+
+/* not sure if needed
+nav ul{
+  cursor: pointer;
+  text-decoration: none;
+}*/
+
+/* Specifics */
+
+
+.hero-banner {
+  background-image: url("images/02-hero-bg.jpg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*not sure if needed
+.hero-text {
+  
+}*/
+
+.page-section {}
+
+.page-wrapper {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 25% 75%;
+  grid-template-areas:
+    "aboutme aboutme"
+    "work work"
+    "contactme contactme";
+}
+
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: space-between;
+}
+
+#aboutme {
+  grid-area: aboutme;
+  display: flex;
+  flex-direction: row;
+}
+
+#aboutmetitle {
+  grid-area: aboutme;
+  padding: 50px;
+  flex: 0 0 20%;
+}
+
+#aboutmecontent {
+  margin: auto;
+  width: 70vw;
+  height: 20vh;
+}
+
+#work {
+  grid-area: work;
+  display: flex;
+  flex-direction: row;
+}
+
+#worktitle {
+  grid-area: work;
+  padding: 50px;
+  flex: 0 0 20%;
+}
+
+#workimage {
+  margin: auto;
+  width: 70vw;
+  height: 50vh;
+}
+
+#contactme {
+  grid-area: contactme;
+  display: flex;
+  flex-direction: row;
+}
+
+#contactmetitle {
+  grid-area: contactme;
+  padding: 50px;
+  flex: 0 0 20%;
+}
+
+#contactmecontent {
+  margin: auto;
+  width: 70vw;
+  height: 20vh;
+
+}
+
+#work-container {
+  grid-area: work;
+  width: 70vw;
+  height: 50vh;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "prework prework"
+    "firstchallenge secondchallenge"
+    "thirdchallenge fourthchallenge";
+}
+
+.work-containerArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: space-between;
+}
+
+#prework {
+  grid-area: prework;
+  background-image: url("images/prework.jpg");
+  
+}
+
+#firstchallenge {
+  grid-area: firstchallenge;
+  background-image: url("images/firstchallenge.jpg");
+}
+
+#secondchallenge {
+  grid-area: secondchallenge;
+  background-image: url("images/secondchallenge.jpg");
+}
+
+#thirdchallenge {
+  grid-area: thirdchallenge;
+  background-image: url("images/thirdchallenge.jpg");
+}
+
+#fourthchallenge {
+  grid-area: fourthchallenge;
+  background-image: url("images/fourthchallenge.jpg");
+}
+
+
+
+
